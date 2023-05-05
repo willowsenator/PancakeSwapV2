@@ -10,10 +10,6 @@ const {
 // RPC Provider
 const provider = new ethers.JsonRpcProvider("https://bsc-dataseed.binance.org");
 
-/*provider.getBlockNumber().then((numBlock) => {
-  console.log("Num Block: ", numBlock);
-});*/
-
 // Connect to Factory
 const contractFactory = new ethers.Contract(
   addressFactory,
