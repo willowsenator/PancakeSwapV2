@@ -5,13 +5,13 @@ const factoryABI = [
 ];
 
 const pairABI = [
-  " function token0() external view returns (address)",
-  " function token1() external view returns (address)",
+  "function token0() external view returns (address)",
+  "function token1() external view returns (address)",
   "function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
 ];
 
 const routerABI = [
-  " function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) public pure returns (uint amountOut)",
+  "function getAmountsOut(uint amountIn, address[] calldata path) external view returns (uint[] memory amounts)",
 ];
 
 module.exports = {
